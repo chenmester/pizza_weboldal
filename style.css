@@ -1,8 +1,44 @@
-.nav{
+body{
+    color: white;
+    margin: 0px;
+    background-color: rgb(34, 34, 34);
+}
+
+.header{
+    display: flex;
     background-image: url(img/pizzakep.jpg);
-    text-align: right;
+    background: linear-gradient(0,0,0,0);
+    background-size: cover;
+    background-position: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+.ball{
+    margin-left: 30px;
+}
+
+.jobb{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px;
+    padding: 10px;
 }
 
 a{
+    text-align: right;
     color: white;
+    text-decoration: none;
+}
+
+.tartalom{
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+}
+
+.menu{
+    background-color: rgb(16, 16, 16);
 }
