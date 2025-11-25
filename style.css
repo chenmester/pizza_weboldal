@@ -83,21 +83,25 @@ a{
 .kepek{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5,100px);
-    gap: 20px;
+    grid-template-rows: repeat(7,1fr);
+    gap: 30px;
     width: 60%;
-    height: 50%;
+    height: 45%;
+    
 }
 
 
-.kep1{grid-column: 1/3; grid-row: 1/4;}
-.kep2{grid-column: 3/4; grid-row: 1/5;}
-.kep3{grid-column: 1/1; grid-row: 4/6;}
-.kep4{grid-column: 2/3; grid-row: 4/6;}
-.kep5{grid-column: 3/4; grid-row: 5/6;}
+.kep1{grid-column: 1/3; grid-row: 1/5;}
+.kep2{grid-column: 3/4; grid-row: 1/6;}
+.kep3{grid-column: 1/1; grid-row: 5/7;}
+.kep4{grid-column: 2/3; grid-row: 5/7;}
+
+.kep5{
+    grid-column: 3/4; 
+    grid-row: 6/8;
+}
 
 .specialitas{
     display: grid;
-    text-align: center;
     justify-items: center;
 }
