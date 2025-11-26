@@ -30,7 +30,7 @@ div img{
     width: 100%;
     height: 100%;
     object-fit: fill;
-    box-shadow: inset 20px 20px 100px rgba(0,0,0,0.8); 
+    filter: brightness(0.8);
     size: cover;
 }
 
@@ -83,25 +83,58 @@ a{
 .kepek{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(7,1fr);
-    gap: 30px;
-    width: 60%;
-    height: 45%;
-    
+    grid-template-rows: repeat(5,1fr);
+    gap: 40px;
+    width: 60%; 
+    height: 50%;
 }
 
+.kepek img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: inset 20px 20px 100px rgba(0,0,0,0.8); 
+}
 
-.kep1{grid-column: 1/3; grid-row: 1/5;}
-.kep2{grid-column: 3/4; grid-row: 1/6;}
-.kep3{grid-column: 1/1; grid-row: 5/7;}
-.kep4{grid-column: 2/3; grid-row: 5/7;}
-
+.kep1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    position: relative;
+}
+.kep2{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    position: relative;
+}
+.kep3{
+    grid-column: 1/1;
+    grid-row: 2/4;
+    position: relative;
+}
+.kep4{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    position: relative;
+}
 .kep5{
     grid-column: 3/4; 
-    grid-row: 6/8;
+    grid-row: 3/5;
+    height: 50%;
+    position: relative;
 }
 
 .specialitas{
     display: grid;
     justify-items: center;
+}
+
+.cimke{
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
 }
