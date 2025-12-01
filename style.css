@@ -10,6 +10,10 @@ h1{
     font-family: 'Montserrat', sans-serif;
 }
 
+h3{
+    text-align: right;
+}
+
 .header{
     display: flex;
     background-image: url(img/pizzakep.jpg);
@@ -83,10 +87,10 @@ a{
 .kepek{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5,1fr);
-    gap: 40px;
+    grid-template-rows: 1fr 0.6fr 1fr 0.2fr;
+    gap: 20px;
     width: 60%; 
-    height: 50%;
+    height: 60%;
 }
 
 .kepek img {
@@ -119,13 +123,13 @@ a{
 .kep5{
     grid-column: 3/4; 
     grid-row: 3/5;
-    height: 50%;
     position: relative;
 }
 
 .specialitas{
     display: grid;
     justify-items: center;
+    height: 850px;
 }
 
 .cimke{
@@ -137,4 +141,38 @@ a{
     font-size: 15px;
     width: 100%;
     text-align: center;
+}
+
+
+.footer{
+    background-color: rgb(16, 16, 16);
+    height: 600px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.felso-p{
+    margin: 2px;
+    width: 200px;
+}
+
+.kozepso-p{
+    width: 200px;
+}
+
+.footer h3{
+    width: 200px;
+    margin: 2px;
+}
+
+.ido{
+    width: 300px;
+}
+
+.ido p{
+    margin: 2px;
 }
