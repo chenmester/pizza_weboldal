@@ -20,6 +20,7 @@ h3{
     text-align: right;
     margin: 0px;
     color: rgb(174, 174, 174);
+    font-weight: 500;
 }
 
 .header{
@@ -88,10 +89,20 @@ a{
 }
 
 .menu{
+    display: flex;
+    flex-direction: column;
     background-color: rgb(16, 16, 16);
-    height: 300px;
-    text-align: center;    
-    padding-top: 65px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu p{
+    margin: 10px;
+    text-align: center;
+    width: 600px;
+    color: rgb(174, 174, 174);
+    font-size: 18px;
 }
 
 .gomb1,.gomb2,.gomb3{
@@ -153,7 +164,13 @@ a{
 .specialitas{
     display: grid;
     justify-items: center;
-    height: 850px;
+    height: 700px;
+    padding: 40px;
+}
+
+.specialitas p{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(174, 174, 174);
 }
 
 .cimke{
@@ -171,11 +188,9 @@ a{
 .footer{
     background-color: rgb(16, 16, 16);
     height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
+    padding: 50px;
 }
 
 .footer-container{
@@ -191,6 +206,7 @@ a{
 
 .kozepso-p{
     width: 200px;
+    color: rgb(174, 174, 174);
 }
 
 .footer h3{
@@ -205,9 +221,27 @@ a{
 .ido p{
     margin: 2px;
     color: rgb(174, 174, 174);
-
 }
 
 .footer-container h3{
     color: white;
+}
+
+.nyitva{
+    padding-bottom: 40px;
+}
+
+.lenti-p{
+    padding: 50px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+hr{
+    background-color: rgb(174, 174, 174);
+    height: 1px;
+    border: 0;
 }
