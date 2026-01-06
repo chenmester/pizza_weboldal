@@ -43,7 +43,7 @@ h3{
 div img{
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     filter: brightness(0.8);
     size: cover;
 }
@@ -56,7 +56,6 @@ div img{
     margin: 30px;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
     letter-spacing: 1px;
 }
 
@@ -183,6 +182,7 @@ a{
     font-size: 15px;
     width: 100%;
     text-align: center;
+    font-style: italic;
 }
 
 
@@ -219,18 +219,21 @@ a{
     width: 300px;
 }
 
+
 .ido p{
     margin: 2px;
     color: rgb(174, 174, 174);
+}
+
+.nyitva{
+    padding-bottom: 40px;
+    color: white;
 }
 
 .footer-container h3{
     color: white;
 }
 
-.nyitva{
-    padding-bottom: 40px;
-}
 
 .lenti-p{
     padding: 50px;
@@ -252,6 +255,14 @@ hr{
     text-decoration: underline;
 }
 
+h5{
+    display: none;
+}
+
+.mobil-kepek{
+    display: none;
+}
+
 @media (max-width: 992px) {
 
     .header{
@@ -259,7 +270,8 @@ hr{
     }
 
     .jobb{
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
 
     .tartalom{
@@ -272,7 +284,6 @@ hr{
 
     .kepek{
         width: 100%;
-        height: 60%;
     }
 
     p{
@@ -289,36 +300,118 @@ hr{
         height: 100%;
     }
 
-    .lenti-p{
-        width: 90%;
-    }
-
 }
 
 @media (max-width: 768px ) {
-    .gombok{
-        display: block;
+
+    .header{
+        background-size: auto;
+        background-position: center;
+    }
+
+    .jobb{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .tartalom{
+        padding: 20px;
+        word-spacing: 2px;
+    }
+
+    .bal-tartalom{
+        margin-top: 10px;
+    }
+
+    .tartalom h2{
+        font-size: 35px;
         width: 100%;
+    }
+    
+    .tartalom h3{
+        font-size: 25px;
+        padding-bottom: 30px;
+    }
+
+    .tartalom p{
+        font-size: 20px;
+    }
+
+    .tartalom h4{
+        display: none;        
+    }
+
+    .tartalom h5{
+        display: block;
+        font-size: 25px;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .gomb1,.gomb2,.gomb3{
+        width: 250px;
+        font-size: 25px;
+    }
+
+    .gombok{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu h2{
+        font-size: 35px;
     }
 
     .menu{
-        display: block;
+        padding: 30px;
         height: 100%;
         padding-bottom: 60px;
-    }
-
-    .kepek{
-        display: block;
-        width: 300px;
+        text-align: center;
     }
 
     .specialitas{
-        width: 100%;
-        height: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+    .kepek{
+        display: none;
+    }
+
+    .kep1,.kep2,.kep3,.kep4,.kep5{
+        margin-bottom: 25px;        
+    }
+
+    .kep4{
+        object-fit: none;
+        height: 800px;
+    }
+    
+    .mobil-kepek{
+        display: block;
+    }
+
+    .kep5{
+        height: 300px;
+    }
+
+    .cimke{
+        bottom: 15px;
+        font-size: 18px;
     }
 
     .container{
         width: 100%;
+    }
+
+    .footer{
+        padding: 10px;
+    }
+
+    .ido{
+        width: auto;
     }
 
     .footer-container{
@@ -330,8 +423,16 @@ hr{
         width: 100%;
     }
 
-    .lenti-p{
-        height: 100%;
+    .felso-p{
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .jobb-p a{
+        font-size: 25px;
+    }
+
+    .kozepso-p{
         width: 100%;
     }
 
@@ -355,10 +456,5 @@ hr{
 
     .header{
         width: 100%;
-
-    }
-
-    .jobb{
-        display: none;
     }
 }
