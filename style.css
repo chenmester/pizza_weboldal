@@ -72,6 +72,7 @@ a{
     width: auto;
     justify-content: center;
     gap: 30px;
+    height: auto;
 }
 
 .bal-tartalom{
@@ -89,12 +90,12 @@ a{
 }
 
 .menu{
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     background-color: rgb(16, 16, 16);
-    height: 400px;
+    height: 380px;
     align-items: center;
-    justify-content: center;
 }
 
 .menu p{
@@ -226,8 +227,14 @@ a{
 }
 
 .nyitva{
+    margin: 3px;
     padding-bottom: 40px;
     color: white;
+}
+
+#nyitvatartas{
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-container h3{
@@ -236,8 +243,7 @@ a{
 
 
 .lenti-p{
-    padding: 50px;
-    width: 70%;
+    padding-top: 40px;
     margin: auto;
     text-align: center;
     font-weight: 100;
@@ -264,11 +270,7 @@ h5{
 }
 
 @media (max-width: 992px) {
-
-    .header{
-        width: 100%;
-    }
-
+    
     .jobb{
         display: flex;
         flex-direction: column;
@@ -420,7 +422,9 @@ h5{
     }
 
     .footer h3{
+        font-size: 28px;
         width: 100%;
+        padding-top: 20px;
     }
 
     .felso-p{
@@ -451,10 +455,6 @@ h5{
     }
 
     .jobb-tartalom p{
-        width: 100%;
-    }
-
-    .header{
         width: 100%;
     }
 }
