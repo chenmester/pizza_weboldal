@@ -90,12 +90,12 @@ a{
 }
 
 .menu{
-    padding-top: 30px;
     display: flex;
     flex-direction: column;
     background-color: rgb(16, 16, 16);
-    height: 380px;
+    height: 400px;
     align-items: center;
+    justify-content: center;
 }
 
 .menu p{
@@ -123,8 +123,8 @@ a{
 .kepek{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 0.6fr 0.2fr 0.1fr;
-    gap: 20px;
+    grid-template-rows: 1fr 0.4fr 0.2fr 0.1fr;
+    gap: 25px;
     width: 60%; 
     height: 60%;
 }
@@ -243,7 +243,7 @@ a{
 
 
 .lenti-p{
-    padding-top: 40px;
+    padding-top: 35px;
     margin: auto;
     text-align: center;
     font-weight: 100;
@@ -267,6 +267,16 @@ h5{
 
 .mobil-kepek{
     display: none;
+}
+
+.mobile-jobb-tartalom{
+    margin-top: 30px;
+    display: none;
+}
+
+.mobile-jobb-tartalom p{
+    font-weight: 100;
+    color: rgb(174, 174, 174);
 }
 
 @media (max-width: 992px) {
@@ -322,12 +332,15 @@ h5{
         word-spacing: 2px;
     }
 
+    .jobb-tartalom{
+        display: none;
+    }
+
     .bal-tartalom{
         margin-top: 10px;
     }
 
     .tartalom h2{
-        font-size: 35px;
         width: 100%;
     }
     
@@ -341,7 +354,9 @@ h5{
     }
 
     .tartalom h4{
-        display: none;        
+        margin: 0px;
+        font-size: 20px;
+        padding-top: 5px;
     }
 
     .tartalom h5{
@@ -376,6 +391,11 @@ h5{
     .specialitas{
         display: block;
         text-align: center;
+        padding: 20px;
+    }
+
+    .specialitas p{
+        font-size: 18px;
     }
     
     .kepek{
@@ -388,7 +408,7 @@ h5{
 
     .kep4{
         object-fit: none;
-        height: 800px;
+        height: 500px;
     }
     
     .mobil-kepek{
@@ -400,8 +420,8 @@ h5{
     }
 
     .cimke{
-        bottom: 15px;
-        font-size: 18px;
+        bottom: 8px;
+        font-size: 13px;
     }
 
     .container{
@@ -422,22 +442,29 @@ h5{
     }
 
     .footer h3{
-        font-size: 28px;
+        font-size: 23px;
         width: 100%;
         padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .felso-p{
         width: 100%;
         padding-top: 40px;
+        font-size: 18px;
     }
 
     .jobb-p a{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .kozepso-p{
         width: 100%;
+        font-size: 18px;
+    }
+
+    .lenti-p p{
+        font-size: 15px;
     }
 
     .menu p{
