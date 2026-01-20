@@ -336,6 +336,10 @@ h5{
         display: none;
     }
 
+    .mobile-jobb-tartalom{
+        display: block;
+    }
+
     .bal-tartalom{
         margin-top: 10px;
     }
